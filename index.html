@@ -1,9 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-  <meta http-equiv="refresh" content="0; url=https://sites.google.com/view/perum-mulyamekar-indah-mmi">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RW 08 Mulyamekar Indah</title>
+    <meta http-equiv="refresh" content="2; url=https://sites.google.com/view/perum-mulyamekar-indah-mmi">
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #2e3b23; /* Hijau Army khas Bapak */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            text-align: center;
+        }
+        .container {
+            border: 2px solid #f1c40f; /* Garis emas biar elegan */
+            padding: 40px;
+            border-radius: 15px;
+            background: rgba(0,0,0,0.2);
+        }
+        h1 { margin-bottom: 10px; font-size: 24px; }
+        p { font-size: 16px; opacity: 0.8; }
+        .loader {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #f1c40f;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
 </head>
 <body>
-  <p>Sedang menuju Website Resmi RW 08 Mulyamekar Indah...</p>
+    <div class="container">
+        <h1>Selamat Datang di Website Resmi</h1>
+        <h2>RW 08 PERUM MULYAMEKAR INDAH</h2>
+        <div class="loader"></div>
+        <p>Sedang menghubungkan ke server...</p>
+    </div>
 </body>
 </html>
