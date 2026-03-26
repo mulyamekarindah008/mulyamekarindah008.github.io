@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistem Informasi Digital RW 08</title>
-    <meta http-equiv="refresh" content="4; url=https://sites.google.com/view/perum-mulyamekar-indah-mmi">
+    <meta http-equiv="refresh" content="3; url=https://sites.google.com/view/perum-mulyamekar-indah-mmi">
     
     <style>
         body {
@@ -14,49 +14,59 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            color: #f1c40f; /* Warna Emas */
+            color: #f1c40f; 
             font-family: 'Courier New', Courier, monospace;
             overflow: hidden;
+            padding: 20px; /* Jarak aman biar gak nempel pinggir HP */
         }
         .frame {
-            border: 3px double #f1c40f;
-            padding: 50px;
+            border: 2px double #f1c40f;
+            padding: 30px 15px;
             text-align: center;
-            box-shadow: 0 0 20px rgba(241, 196, 15, 0.3);
-            background: rgba(0,0,0,0.4);
-            max-width: 80%;
+            box-shadow: 0 0 15px rgba(241, 196, 15, 0.2);
+            background: rgba(0,0,0,0.5);
+            width: 100%;
+            max-width: 400px; /* Biar pas di layar HP */
         }
         .typing {
-            overflow: hidden;
-            border-right: .15em solid #f1c40f;
-            white-space: nowrap;
-            margin: 0 auto;
-            letter-spacing: .15em;
-            animation: typing 2.5s steps(30, end), blink-caret .5s step-end infinite;
-            font-size: 20px;
+            font-size: 16px; /* Ukuran pas buat HP */
             font-weight: bold;
             text-transform: uppercase;
+            white-space: normal; /* Biar tulisan bisa turun ke bawah kalo kepanjangan */
+            line-height: 1.5;
+            margin-bottom: 15px;
         }
         .sub-text {
             color: white;
-            margin-top: 20px;
             font-family: Arial, sans-serif;
-            font-size: 14px;
+            font-size: 12px;
             letter-spacing: 1px;
-            opacity: 0;
-            animation: fadeIn 1s forwards 2.5s;
+            border-top: 1px solid #f1c40f;
+            padding-top: 15px;
         }
-        @keyframes typing { from { width: 0 } to { width: 100% } }
-        @keyframes blink-caret { from, to { border-color: transparent } 50% { border-color: #f1c40f } }
-        @keyframes fadeIn { to { opacity: 1 } }
+        .loader-bar {
+            width: 100%;
+            height: 4px;
+            background: #1a2313;
+            margin-top: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        .loader-progress {
+            width: 0;
+            height: 100%;
+            background: #f1c40f;
+            animation: loading 3s linear forwards;
+        }
+        @keyframes loading { to { width: 100% } }
     </style>
 </head>
 <body>
     <div class="frame">
-        <div class="typing">MENYAMBUNGKAN KE PORTAL RW 08...</div>
-        <div class="sub-text">SISTEM INFORMASI DIGITAL MULYAMEKAR INDAH</div>
-        <div style="margin-top: 30px;">
-             <small style="color: #aaa;">Mohon Tunggu Sebentar...</small>
+        <div class="typing">MENGHUBUNGKAN KE<br>PORTAL DIGITAL RW 08</div>
+        <div class="sub-text">MULYAMEKAR INDAH (MMI)</div>
+        <div class="loader-bar">
+            <div class="loader-progress"></div>
         </div>
     </div>
 </body>
